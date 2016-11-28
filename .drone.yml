@@ -4,6 +4,7 @@ workspace:
 
 pipeline:
   build:
-    image: golang:1.6.3
+    image: golang:1.7.3
     commands:
+    - go build .
     - go test ./...
